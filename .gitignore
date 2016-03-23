@@ -30,3 +30,4 @@ node_modules
 .vscode
 Code
 .idea/workspace.xml
+*.xml
