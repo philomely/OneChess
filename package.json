@@ -1,0 +1,19 @@
+{
+  "name": "OneChess",
+  "version": "0.0.1",
+  "description": "OneChess",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/philomely/OneChess/"
+  },
+  "author": "ayang",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.10.2",
+    "socket.io": "^1.3.5"
+  }
+}
