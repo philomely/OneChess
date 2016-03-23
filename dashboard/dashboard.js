@@ -26,8 +26,7 @@
            boards[msg.gameId].position(games[msg.gameId].fen());
         
       });
-
-
+        
                  
       //////////////////////////////
       // Chess Games
