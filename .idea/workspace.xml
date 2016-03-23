@@ -2,50 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2b269a03-8373-41b0-8b7a-ee2e433b7a63" name="Default" comment="first commit">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/img/chesslogo.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/img/chesspieces/wikipedia/bB.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/img/chesspieces/wikipedia/bK.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/img/chesspieces/wikipedia/bN.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/img/chesspieces/wikipedia/bP.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/img/chesspieces/wikipedia/bQ.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/img/chesspieces/wikipedia/bR.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/img/chesspieces/wikipedia/wB.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/img/chesspieces/wikipedia/wK.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/img/chesspieces/wikipedia/wN.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/img/chesspieces/wikipedia/wP.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/img/chesspieces/wikipedia/wQ.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/img/chesspieces/wikipedia/wR.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/WinJS.4.0/fonts/Symbols.ttf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.gitignore" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/.name" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/OneChess.iml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/codeStyleSettings.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/encodings.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/realchess_master_node_modules.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/watcherTasks.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Game.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/README.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/chess.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dashboard/dashboard.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dashboard/dashboard.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dashboard/dashboard.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/package.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/default.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/default.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/WinJS.4.0/css/ui-dark.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/WinJS.4.0/css/ui-light.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/WinJS.4.0/js/WinJS.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/chess.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/chessboard-0.3.0.min.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/chessboard-0.3.0.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/jquery-1.11.1.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/socket.io-1.2.0.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dashboard/dashboard.js" afterPath="$PROJECT_DIR$/dashboard/dashboard.js" />
     </list>
     <ignored path="realchess-master.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -91,8 +49,8 @@
           <file leaf-file-name="dashboard.js" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/dashboard/dashboard.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="459">
-                  <caret line="27" column="9" selection-start-line="27" selection-start-column="9" selection-end-line="27" selection-end-column="9" />
+                <state relative-caret-position="306">
+                  <caret line="18" column="6" selection-start-line="18" selection-start-column="6" selection-end-line="18" selection-end-column="6" />
                   <folding />
                 </state>
               </provider>
@@ -200,6 +158,7 @@
         <option value="$PROJECT_DIR$/public/default.js" />
         <option value="$PROJECT_DIR$/app.js" />
         <option value="$PROJECT_DIR$/package.json" />
+        <option value="$PROJECT_DIR$/dashboard/dashboard.js" />
       </list>
     </option>
   </component>
@@ -357,12 +316,12 @@
       <updated>1457760050729</updated>
       <workItem from="1458700410575" duration="3923000" />
       <workItem from="1458714998000" duration="205000" />
-      <workItem from="1458715301720" duration="317000" />
+      <workItem from="1458715301720" duration="846000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="4445000" />
+    <option name="totallyTimeSpent" value="4974000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="344" y="245" width="1932" height="1047" extended-state="0" />
@@ -756,14 +715,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/dashboard/dashboard.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="459">
-          <caret line="27" column="9" selection-start-line="27" selection-start-column="9" selection-end-line="27" selection-end-column="9" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/public/lib/WinJS.4.0/css/ui-light.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="194">
@@ -776,6 +727,14 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="289">
           <caret line="17" column="3" selection-start-line="17" selection-start-column="3" selection-end-line="17" selection-end-column="3" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dashboard/dashboard.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="18" column="6" selection-start-line="18" selection-start-column="6" selection-end-line="18" selection-end-column="6" />
           <folding />
         </state>
       </provider>
