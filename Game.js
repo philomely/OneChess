@@ -15,12 +15,12 @@ class Game {
         this.countdown = 5;
         this.whiteNum = 0;
         this.blackNum = 0;
-        this.board = null;
+        //this.board = null;
         this.chess = new Chess();
     }
 
     update() {
-        console.log('game state', this.gameState);
+        //console.log('game state', this.gameState);
         if(this.gameState == IDLE) {
             return;
         }
@@ -35,10 +35,10 @@ class Game {
         else if(this.gameState == VOTE_STAGE) {
             console.log('game make move', this.id);
             var move = this.chooseMove();
-            this.board = this.chess.move(move);
+            this.chess.move(move.msg.move);
             io.sockets.in(this.id).emit('move', move.msg);
             this.moveCandidates = {};
-            this.countdown = 5;
+            this.countdown = 1;
             this.gameState = MOVE_STAGE;
         }
 
@@ -63,7 +63,10 @@ class Game {
     }
 
     onJoin(socket) {
+        //this.board = this.chess.fen();
         var cfg = {game: this};
+        cfg.fen=this.chess.fen();
+       // console.log(this.board);
         if(this.whiteNum <= this.blackNum) {
             this.whiteNum ++;
             cfg.color= 'white';
@@ -72,6 +75,7 @@ class Game {
             this.blackNum ++;
             cfg.color= 'black';
         }
+        console.log('color', cfg.color);
         socket.join(this.id);
         socket.gameId = this.id;
         socket.playerColor = cfg.color;

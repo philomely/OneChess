@@ -27,7 +27,7 @@
       socket.on('joingame', function(msg) {
         console.log("joined as game id: " + msg.game.id );   
         playerColor = msg.color;
-        initGame(msg.game);
+        initGame(msg);
         
         $('#page-lobby').hide();
         $('#page-game').show();
@@ -39,7 +39,7 @@
            board.position(game.fen());
             var dataSource = $('#movelist')[0].winControl.itemDataSource;
             dataSource.beginEdits();
-            dataSource.insertAtEnd("dfd", "{aaaa}");
+            dataSource.insertAtEnd("dfd", msg.move);
             dataSource.endEdits();
         }
       });
@@ -85,6 +85,11 @@
       
       var updateGamesList = function() {
         document.getElementById('gamesList').innerHTML = '';
+        $('#gamesList').append($('<button>')
+                        .text('*new game')
+                        .on('click', function() {
+                          socket.emit('newGame',  game);
+                        }));
         myGames.forEach(function(game) {
           $('#gamesList').append($('<button>')
                         .text('#'+ game)
@@ -100,19 +105,19 @@
       ////////////////////////////// 
       
       var initGame = function (serverGameState) {
-        serverGame = serverGameState; 
-        
+        serverGame = serverGameState.game; 
+          console.log(serverGameState)
           var cfg = {
             draggable: true,
             showNotation: false,
             orientation: playerColor,
-            position: serverGame.board ? serverGame.board : 'start',
+            position: serverGameState.fen,// serverGame.board ? serverGame.board : 'start',
             onDragStart: onDragStart,
             onDrop: onDrop,
             onSnapEnd: onSnapEnd
           };
                
-          game = serverGame.board ? new Chess(serverGame.board) : new Chess();
+          game = new Chess(serverGameState.fen);//serverGame.board ? new Chess(serverGame.board) : new Chess();
           board = new ChessBoard('game-board', cfg);
       }
        

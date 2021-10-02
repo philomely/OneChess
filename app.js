@@ -43,7 +43,9 @@ io.on('connection', function(socket) {
     });
 
     socket.on('newGame', function(gameId) {
-
+        var game = new Game(io);
+        activeGames[game.id] = game;
+        activeGames[game.id].onJoin(socket);
     });
 
      socket.on('resumegame', function(gameId) {
@@ -84,8 +86,8 @@ function updateGames() {
     }
 }
 function run() {
-    initGame();
-    setInterval(updateGames, 1000);
+    //initGame();
+    setInterval(updateGames, 3000);
 }
 run();
 http.listen(port, function() {
